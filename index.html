@@ -6,10 +6,14 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="css/twentytwenty.css">
-    <script src="js/jquery.twentytwenty.js></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script src="js/jquery.twentytwenty.js"></script>
+    <script>
+      $(document).ready(function() {
+            $(".twentytwenty-container").twentytwenty();
+        });    
+    </script>
+ 
     
-
     <style>
       /* Dark backgroud for the body */
       body {
@@ -147,8 +151,15 @@
         </div>
 
         <!--Before and After image-->
-            
-    
+
+        <div class="twentytwenty-container">
+          <img src="assets/example-media/Newmont mine Green.png">
+          <img src="assets/example-media/Newmont Mine expanded..png">
+        </div>
+         
+          
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6">
             <p>Ghana is Africa’s largest gold producer, and Newmont predicts it will make more than $8.5 billion a year over its 13-year exploration of the Ahafo North region.</p>
 
             <p>Across Africa, multinational mining companies displace farmers with inadequate compensation, exploit a power imbalance, and manipulate mining laws, according to MiningWatch Canada, a watchdog group focused on the industry’s impact. This leaves farmers impoverished and limited recourse to justice — a trend raising concerns from organizations like Human Rights Watch.</p>
@@ -159,8 +170,8 @@
 
           </div>
         </div>
-
-        
+      
+    
         
         <!-- EXAMPLE OF ONE LARGE IMAGE -->
         <figure class="figure">
@@ -565,6 +576,7 @@
     <script type="text/javascript" src="js/d3.v7.min.js"></script>
     <script type="text/javascript" src="js/intersection-observer.js"></script>
     <script type="text/javascript" src="js/scrollama.js"></script>
+    <script type="text/javascript" src="js/jquery.twentytwenty.js"></script>
     <script>
       jQuery(document).ready(function($){
 
